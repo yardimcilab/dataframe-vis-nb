@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "dataframe-vis-nb"
+version = "0.1.0"
+description = ""
+authors = ["Ben Skubi <bskubi@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+nbformat-cli = "^0.1.0"
+datavis-cli = "^0.1.2"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+dataframe-vis-nb = "dataframe_vis_nb.__main__:cli"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
